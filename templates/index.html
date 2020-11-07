@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div class="container">
+      <img class="card-img-top" src="/static/bg_healthcheck.png" alt="">
+    </div>
+  
+<br>
+ 
+<div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://partheniumprojects.com/wp-content/uploads/2018/12/Diabetes-prediction-2.png" width="150" height="200" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Diabetes Prediction</h4>
+            <h6 class="card-text"></h6>
+          </div>
+          <div class="card-footer">
+            <a href="{{ url_for('diabetes') }}" class="btn btn-primary">Take Test!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://i1.wp.com/www.md2c.nl/wp-content/uploads/2016/06/predict-heart-disease.jpg?fit=480%2C360" width="150" height="200" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Heart Disease Prediction</h4>
+            <h6 class="card-text"></h6>
+          </div>
+          <div class="card-footer">
+            <a href="{{ url_for('heart') }}" class="btn btn-primary">Take Test!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="{{ url_for('static', filename='cancer_.png') }}" width="150" height="200" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Cancer Prediction</h4>
+            <h6 class="card-text"></h6>
+          </div>
+          <div class="card-footer">
+            <a href="{{ url_for('cancer') }}" class="btn btn-primary">Take Test!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- /.row 
+    <div class="row">
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="{{ url_for('static', filename='malaria.jpg') }}" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Malaria Prediction</h4>
+            <h6 class="card-text"></h6>
+          </div>
+          <div class="card-footer">
+            <a href="{{ url_for('heart') }}" class="btn btn-primary">Take Test!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="{{ url_for('static', filename='pneumonia.jpg') }}" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Pneumonia Prediction</h4>
+            <h6 class="card-text"></h6>
+          </div>
+          <div class="card-footer">
+            <a href="{{ url_for('heart') }}" class="btn btn-primary">Take Test!</a>
+          </div>
+        </div>
+      </div>
+    </div>-->
+    
+    
+
+{% endblock %}  

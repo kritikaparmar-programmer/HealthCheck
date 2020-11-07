@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<br>
+<div class="container">
+    <h1 class="text-center">Heart Disease Prediction</h1>
+</div>
+    	<div class="center">
+    		<form action="{{ url_for('predict_heart') }}" method="POST">
+                <input class="form-input" type="text" name="age" placeholder="Age (years) eg. 34"><br>
+                <input class="form-input" type="text" name="sex" placeholder="Sex (eg. 0: Female, 1:Male)"><br>
+                <input class="form-input" type="text" name="chestpaintype" placeholder="Chest Pain Type"><br>
+                <input class="form-input" type="text" name="trestbps" placeholder="Trestbps"><br>
+                <input class="form-input" type="text" name="serumcholestoral" placeholder="Serum cholestoral in mg/dl"><br>
+                <input class="form-input" type="text" name="restecg" placeholder="Restecg"><br>
+                <input class="form-input" type="text" name="thalach" placeholder="Thalach"><br>
+                <input class="form-input" type="text" name="exang" placeholder="Exang"><br>
+                <input class="form-input" type="text" name="oldpeak" placeholder="Oldpeak"><br>
+                <input class="form-input" type="text" name="slope" placeholder="Slope"><br>
+                <input class="form-input" type="text" name="thal" placeholder="Thal"><br>
+        		<input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+    	</div>
+
+{% endblock %}
