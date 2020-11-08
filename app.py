@@ -7,7 +7,7 @@ import joblib
 app = Flask(__name__)
 
 # Load the Random Forest CLassifier model
-filename = 'models/diabetes-prediction-rfc-model.pkl'
+filename = 'models/diabetes-model.pkl'
 filename1 = 'models/cancer-model.pkl'
 classifier = pickle.load(open(filename, 'rb'))
 rf = pickle.load(open(filename1, 'rb'))
