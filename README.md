@@ -5,6 +5,9 @@
     <img src="https://github.com/kritikaparmar-programmer/HealthCheck/blob/main/static/bg_healthcheck.png" alt="image" >
   </a>
 
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+
 ## 👀 Introduction
 
 This is a Machine Learning Web Application which can predict three diaseases i.e. Diabetes, Heart disease and Cancer. The datasets have been taken from Kaggle. And overall analysis and model building for the diseases have been done in respective Jupyter Notebooks.
