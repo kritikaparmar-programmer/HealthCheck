@@ -10,7 +10,7 @@
 
 ## 👀 Introduction
 
-This is a Machine Learning Web Application which can predict three diaseases i.e. Diabetes, Heart disease and Cancer. The datasets have been taken from Kaggle. And overall analysis and model building for the diseases have been done in respective Jupyter Notebooks.
+This is a Machine Learning Web Application which can predict three diaseases i.e. **Diabetes, Heart disease and Cancer**. The datasets have been taken from Kaggle. And overall analysis and model building for the diseases have been done in respective Jupyter Notebooks.
 - [Datasets](https://github.com/kritikaparmar-programmer/HealthCheck/tree/main/Datasets)
 
 ## 👩‍💻 Technology Stack
