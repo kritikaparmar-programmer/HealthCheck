@@ -7,6 +7,7 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+<p align="center"><h2>Join <a href="https://join.slack.com/t/newworkspace-bzg8318/shared_invite/zt-mkgixmly-GFjx2bFPetz837_V24h_1Q">Slack Channel</a> for Discussion</h2></p>
 
 ## 👀 Introduction
 
