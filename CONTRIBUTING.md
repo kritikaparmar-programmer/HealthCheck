@@ -82,7 +82,7 @@ If you're not on Windows, you should also have GNU make installed, and you can o
     ```
 * Commit all the changes
     ```
-    git commit -am "Meaningful commit message"
+    git commit -m "Meaningful commit message"
     ```
 * Push the changes for review
     ```
