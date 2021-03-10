@@ -20,7 +20,7 @@ We love receiving contributions from our community. Any assistance you can provi
 
 # 2. Ground Rules
 1. Ensure cross compatibility for Windows, Mac OS and Linux.
-2. Ensure all Python features used in contributions exist and work in Python 3.8.1 and above.
+2. Ensure all Python features used in contributions exist and work in Python 3.7 and above.
 3. Create any issues for new features you'd like to implement and explain why this feature is useful to everyone and not just you personally.
 4. Be welcoming to newcomers and encourage diverse new contributors from all backgrounds. See [Python Community Code of Conduct](https://www.python.org/psf/codeofconduct/). 
 
@@ -37,7 +37,7 @@ Edbeepbot's repository is configured to follow a particular development workflow
 
 ### 4.1 Setting up your development environment
 The following requirements must be installed prior to setting up:
- - Python `3.8.1` or greater
+ - Python `3.7` or greater
  - git
  - pip
  - flask
