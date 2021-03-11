@@ -27,14 +27,81 @@ This is a Machine Learning Web Application which can predict three diaseases i.e
 
 Get your own Fork/Copy of repository by clicking `Fork` button right upper corner.<br><br>
 
-#### Clone :
+## Contribution Guidelines :
 
-```sh
-$ git clone https://github.com/kritikaparmar-programmer/HealthCheck
+To start contributing, follow the below guidelines: 
+
+**1.**  Fork [this](https://github.com/kritikaparmar-programmer/HealthCheck) repository.
+
+**2.** `cd` to the location you want to clone your repository.
+
+**3.**  Clone your forked copy of the project.
+```
+git clone https://github.com/kritikaparmar-programmer/HealthCheck
 
 ```
 
-#### Setting up Project
+**4.** Navigate to the project directory.
+
+```
+cd HealthCheck
+```
+
+**5.** Add a remote to the original repository.
+
+```
+git remote add upstream https://github.com/kritikaparmar-programmer/HealthCheck.git
+```
+
+**6.** Check the remotes for this repository.
+
+```
+git remote -v
+```
+
+**7.** Always take a pull from the upstream repository to your master branch to keep it updated with the main project.
+
+```
+git pull upstream master
+```
+
+**8.** Create a new branch.
+
+```
+git checkout -b <your_branch_name>
+```
+
+**9.** Perform your desired changes to the code base.
+
+
+**10.** Track your changes
+
+```
+git add . 
+```
+
+**11.** Commit your changes .
+
+```
+git commit -m "Commit message"
+```
+
+**12.** Push the committed changes in your branch to your remote repo.
+
+```
+git push -u origin <your_branch_name>
+```
+
+**13.** To create a pull request, click on `compare and pull requests`.
+
+
+**14.** Add appropriate description to your pull request explaining your changes.
+
+
+**15.** Click on `Create Pull Request`.
+
+
+## Setting up Project
 
 1. Create a Virtual Environment
 ```
