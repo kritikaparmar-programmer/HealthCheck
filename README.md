@@ -7,19 +7,21 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+
 <p align="center"><h2>Join <a href="https://join.slack.com/t/newworkspace-bzg8318/shared_invite/zt-mkgixmly-GFjx2bFPetz837_V24h_1Q">Slack Channel</a> for Discussion</h2></p>
 
 ## 👀 Introduction
 
 This is a Machine Learning Web Application which can predict three diaseases i.e. Diabetes, Heart disease and Cancer. The datasets have been taken from Kaggle. And overall analysis and model building for the diseases have been done in respective Jupyter Notebooks.
+
 - [Datasets](https://github.com/kritikaparmar-programmer/HealthCheck/tree/main/Datasets)
 
 ## 👩‍💻 Technology Stack
 
-* [Flask](https://github.com/pallets/flask)
-* [HTML](https://www.w3.org/TR/html52/)
-* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-* [Bootstrap](https://getbootstrap.com/)
+- [Flask](https://github.com/pallets/flask)
+- [HTML](https://www.w3.org/TR/html52/)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Bootstrap](https://getbootstrap.com/)
 
 ## 🚀 Quick Start :
 
@@ -27,43 +29,50 @@ This is a Machine Learning Web Application which can predict three diaseases i.e
 
 Get your own Fork/Copy of repository by clicking `Fork` button right upper corner.<br><br>
 
-#### Clone :
+#### Clone the Forked Repository
 
-```sh
-$ git clone https://github.com/kritikaparmar-programmer/HealthCheck
-
+```bash
+$ git clone https://github.com/<your-github-username>/HealthCheck
 ```
 
 #### Setting up Project
 
-1. Create a Virtual Environment
-```
-python3 -m venv env
-```
+**1. Create a Virtual Environment**
 
-2. Activate the Virtual Environment
+- On macOS and Linux: 
+  ```bash
+    python3 -m venv env
+  ```
+- Windows
+  ```bash
+    py -m venv env
+  ````
+
+**2. Activate the Virtual Environment**
   - On Windows
-    ``` 
-    env\Scripts\activate
+    ```bash
+    .\env\Scripts\activate
     ```
-  - On Linux or MAC
-    ```
+  - On macOS and Linux:
+    ```bash
     source env/bin/activate
     ```
 
-3. Install dependencies using
-```
+**3. Install dependencies using**
+```bash
 pip install -r requirements.txt
-```
+````
 
-4. Run server using
-```
+**4. Run server using**
+
+```bash
 flask run
 ```
-5. Go to ` http://127.0.0.1:5000/` and enjoy the application.
 
-6. Drop a ⭐ on the Github Repository. 
+**5.** Go to ` http://127.0.0.1:5000/` and enjoy the application.
+
+**6.** Drop a ⭐ on the Github Repository.
 
 ## 📜 LICENSE
 
-[MIT](https://github.com/kritikaparmar-programmer/HealthCheck/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/kritikaparmar-programmer/HealthCheck?logo=github)](https://github.com/kritikaparmar-programmer/HealthCheck/blob/main/LICENSE)
