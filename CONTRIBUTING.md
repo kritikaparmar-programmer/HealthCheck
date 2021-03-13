@@ -84,6 +84,10 @@ If you're not on Windows, you should also have GNU make installed, and you can o
     ```
     git commit -m "Meaningful commit message"
     ```
+* Add a `remote` link with your github repository, named as `origin`
+    ```
+    git remote add origin https://github.com/<your-github-username>r/HealthCheck.git
+    ```
 * Push the changes for review
     ```
     git push origin <branch-name>
