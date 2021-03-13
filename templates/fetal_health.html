@@ -1,0 +1,154 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="container" style="color: purple;">
+    <h1 class="text-center"><u><b>Fetal Health Prediction</b></u></h1>
+</div>
+
+<!-- Taking Input Data Area -->
+<div class="center" id="entry_form" style="display: none;">
+    <form action="/fetal_health" method="POST" style="font-weight: 600;">
+        <div class="form-group">
+            <label for="">Baseline Value *</label>
+            <input type="number" name="baseline_value" class="form-control" placeholder="" required>
+        </div>
+        <div class="form-group">
+            <label for="">Accelerations *</label>
+            <input type="number" name="accelerations" class="form-control" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+            <label for="">Fetal Movement *</label>
+            <input type="number" name="fetal_movement" class="form-control" placeholder="" required>
+        </div>
+        <div class="form-group">
+            <label for="">Uterine Contractions *</label>
+            <input type="number" name="uterine_contractions" class="form-control" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+            <label for="">Light Decelerations *</label>
+            <input type="number" name="light_decelerations" class="form-control" placeholder="" required>
+        </div>
+        <div class="form-group">
+            <label for="">Severe Decelerations *</label>
+            <input type="number" name="severe_decelerations" class="form-control" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+            <label for="">Prolongued Decelerations *</label>
+            <input type="number" name="prolongued_decelerations" class="form-control" placeholder="" required>
+        </div>
+        <div class="form-group">
+            <label for="">Abnormal Short Term Variability *</label>
+            <input type="number" name="abnormal_short_term_variability" class="form-control" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+            <label for="">Mean Value of Short Term Variability *</label>
+            <input type="number" name="mean_value_of_short_term_variability" class="form-control" placeholder="" required>
+        </div>
+        <div class="form-group">
+            <label for="">Percentage of Time with Abnormal Long Term Variability *</label>
+            <input type="number" name="percentage_of_time_with_abnormal_long_term_variability" class="form-control" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+            <label for="">Mean Value of Long Term Variability *</label>
+            <input type="number" name="mean_value_of_long_term_variability" class="form-control" placeholder="" required>
+        </div>
+        <div class="form-group">
+            <label for="">Histogram Width *</label>
+            <input type="number" name="histogram_width" class="form-control" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+            <label for="">Histogram Min *</label>
+            <input type="number" name="histogram_min" class="form-control" placeholder="" required>
+        </div>
+        <div class="form-group">
+            <label for="">Histogram Max *</label>
+            <input type="number" name="histogram_max" class="form-control" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+            <label for="">Histogram Number of Peaks *</label>
+            <input type="number" name="histogram_number_of_peaks" class="form-control" placeholder="" required>
+        </div>
+        <div class="form-group">
+            <label for="">Histogram Number of Zeroes *</label>
+            <input type="number" name="histogram_number_of_zeroes" class="form-control" placeholder="" required>
+        </div>
+        <div class="form-group">
+            <label for="">Histogram Mode *</label>
+            <input type="number" name="histogram_mode" class="form-control" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+            <label for="">Histogram Mean *</label>
+            <input type="number" name="histogram_mean" class="form-control" placeholder="" required>
+        </div>
+        <div class="form-group">
+            <label for="">Histogram Median *</label>
+            <input type="number" name="histogram_median" class="form-control" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+            <label for="">Histogram Variance *</label>
+            <input type="number" name="histogram_variance" class="form-control" placeholder="" required>
+        </div>
+        <div class="form-group">
+            <label for="">Histogram Tendency *</label>
+            <input type="number" name="histogram_tendency" class="form-control" placeholder="" required>
+        </div>
+        
+
+        <div class="text-center mb-4 pb-5">
+            <input type="submit" class="btn btn-success btn-lg" value="Predict">
+        </div>
+        
+    </form>
+</div>
+
+<!-- Displaying Output Area -->
+<div class="center mt-4 pt-4" id="show_result" style="display: none;">
+    {%  if result == 1 %}
+        <h5><span style="font-weight: bold;"><u>Predicted Result :</u></span> <span style="color: darkblue;">The Condition of Fetal is : <span style="color: green;font-weight: bold;">Normal</span>.</span></h5>
+        <div class="text-center p-4 m-4">
+            <img class="gif" src="{{ url_for('static', filename='happy_emoji.png') }}" style="height: 200px;width: 200px;" alt="Loading ...">
+        </div>
+    {% elif result == 2 %}
+        <h5><span style="font-weight: bold;"><u>Predicted Result :</u></span> <span style="color: darkblue;">The Condition of Fetal is : <span style="color: darkred;font-weight: bold;">Suspected</span>.</span></h5>
+        <div class="text-center p-4 m-4">
+            <img class="gif" src="{{ url_for('static', filename='middle_emoji.png') }}" style="height: 200px;width: 200px;" alt="Loading ...">
+        </div>
+    {% elif result == 3 %}
+        <h5><span style="font-weight: bold;"><u>Predicted Result :</u></span> <span style="color: darkblue;">The Condition of Fetal is : <span style="color: red;">Pathological</span>.</span></h5>
+        <div class="text-center p-4 m-4">
+            <img class="gif" src="{{ url_for('static', filename='sad_emoji.png') }}" style="height: 200px;width: 200px;" alt="Loading ...">
+        </div>
+    {% else %}
+        <h3 style="color: red;">Somthing Wrong... :(</h3>
+    {% endif %}
+
+    <div class="text-center p-4 m-4">
+        <button type="button" class="btn btn-success btn-lg" onclick="window.location.href='/fetal_health'">Back</button>
+    </div>
+
+</div>
+
+<script>
+    let entry_form = document.getElementById('entry_form');
+    let show_result = document.getElementById('show_result');
+    let output = '{{ result }}';
+    // console.log(output);
+    if (output === 'None') {
+        entry_form.style.display = "block";
+        show_result.style.display = "none";
+    } else {
+        entry_form.style.display = "none";
+        show_result.style.display = "block";
+    }
+</script>
+
+{% endblock body %}
