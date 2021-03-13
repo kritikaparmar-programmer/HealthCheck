@@ -9,8 +9,8 @@ app = Flask(__name__)
 # Load the Random Forest CLassifier model
 filename = 'Models/diabetes-model.pkl'
 filename1 = 'Models/cancer-model.pkl'
-# classifier = pickle.load(open(filename, 'rb'))
-# rf = pickle.load(open(filename1, 'rb'))
+classifier = pickle.load(open(filename, 'rb'))
+rf = pickle.load(open(filename1, 'rb'))
 
 
 @app.route('/')
@@ -116,25 +116,32 @@ def predict_heart():
 
 
 def fetal_health_value_predictor(data):
-    print(data)
-    result = 'Good Boy'
-    status = 'Ok 👌'
-    return (result,status)
+    try:
+        data = list(data.values())
+        data = list(map(float, data))
+        data = np.array(data).reshape(1,-1)
+        model_path = 'Models/fetal-health-model.pkl'
+        model = pickle.load(open(model_path, 'rb'))
+        result = model.predict(data)
+        result = int(result[0])
+        status = True
+        return (result,status)
+    except Exception as e:
+        result = str(e)
+        status = False
+        return (result,status)
+
 
 @app.route('/fetal_health', methods=['GET','POST'])
 def fetal_health_prediction():
     if request.method == 'POST':
-        try:
-            data = request.form.to_dict()
-            data = list(data.values())
-            data = list(map(float, data))
-            result,status = fetal_health_value_predictor(data)
-            if status:
-                return render_template('fetal_health.html', result= 1)
-            else:
-                return f'<h2>Error : {result}</h2>'         
-        except Exception as e:
-            return f'<h2>Error : {str(e)}</h2>'
+        data = request.form.to_dict()
+        result,status = fetal_health_value_predictor(data)
+        if status:
+            return render_template('fetal_health.html', result= result)
+        else:
+            return f'<h2>Error : {result}</h2>'         
+
     return render_template('fetal_health.html', result=None)
 
 if __name__ == '__main__':
