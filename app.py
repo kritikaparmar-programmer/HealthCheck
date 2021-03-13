@@ -115,16 +115,21 @@ def predict_heart():
     return render_template('h_result.html', prediction=prediction)
 
 
+# this function use to predict the output for Fetal Health from given data
 def fetal_health_value_predictor(data):
     try:
+        # after get the data from html form then we collect the values and 
+        # converts into 2D numpy array for prediction
         data = list(data.values())
         data = list(map(float, data))
         data = np.array(data).reshape(1,-1)
+        # load the saved pre-trained model for new prediction
         model_path = 'Models/fetal-health-model.pkl'
         model = pickle.load(open(model_path, 'rb'))
         result = model.predict(data)
         result = int(result[0])
         status = True
+        # returns the predicted output value
         return (result,status)
     except Exception as e:
         result = str(e)
@@ -132,17 +137,25 @@ def fetal_health_value_predictor(data):
         return (result,status)
 
 
+# this route for prediction of Fetal Health
 @app.route('/fetal_health', methods=['GET','POST'])
 def fetal_health_prediction():
     if request.method == 'POST':
+        # geting the form data by POST method
         data = request.form.to_dict()
+        # passing form data to castome predict method to get the result
         result,status = fetal_health_value_predictor(data)
         if status:
+            # if prediction happens successfully status=True and then pass uotput to html page
             return render_template('fetal_health.html', result= result)
         else:
+            # if any error occured during prediction then the error msg will be displayed 
             return f'<h2>Error : {result}</h2>'         
 
+    # if the user send a GET request to '/fetal_health' route then we just render the html page 
+    # which contains a form for prediction
     return render_template('fetal_health.html', result=None)
+
 
 if __name__ == '__main__':
 	app.run(debug=True)
