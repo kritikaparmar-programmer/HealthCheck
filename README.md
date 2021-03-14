@@ -12,16 +12,19 @@
 
 ## 👀 Introduction
 
-This is a Machine Learning Web Application which can predict three diaseases i.e. Diabetes, Heart disease and Cancer. The datasets have been taken from Kaggle. And overall analysis and model building for the diseases have been done in respective Jupyter Notebooks.
+This is a Machine Learning Web Application which can predict three diseases i.e. Diabetes, Heart disease and Cancer. The datasets have been taken from Kaggle. And overall analysis and model building for the diseases have been done in respective Jupyter Notebooks.
 
 - [Datasets](https://github.com/kritikaparmar-programmer/HealthCheck/tree/main/Datasets)
 
 ## 👩‍💻 Technology Stack
 
-- [Flask](https://github.com/pallets/flask)
+#### **Tools**
+- [Python](https://www.w3schools.com/python/python_intro.asp)
+- [Jupyter Notebook](https://jupyter.org/documentation)
 - [HTML](https://www.w3.org/TR/html52/)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Bootstrap](https://getbootstrap.com/)
+- [Flask](https://github.com/pallets/flask)
 
 ## 🚀 Quick Start :
 
@@ -39,21 +42,21 @@ $ git clone https://github.com/<your-github-username>/HealthCheck
 
 **1. Create a Virtual Environment**
 
-- On macOS and Linux: 
+- *On macOS and Linux:*
   ```bash
     python3 -m venv env
   ```
-- Windows
+- *Windows*
   ```bash
     py -m venv env
   ````
 
 **2. Activate the Virtual Environment**
-  - On Windows
+  - *On Windows*
     ```bash
     .\env\Scripts\activate
     ```
-  - On macOS and Linux:
+  - *On macOS and Linux:*
     ```bash
     source env/bin/activate
     ```
