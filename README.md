@@ -76,3 +76,17 @@ flask run
 ## 📜 LICENSE
 
 [![GitHub license](https://img.shields.io/github/license/kritikaparmar-programmer/HealthCheck?logo=github)](https://github.com/kritikaparmar-programmer/HealthCheck/blob/main/LICENSE)
+
+## Contributor:
+### Credit goes to these people: ✨
+
+<table>
+	<tr>
+		<td>
+			<a href="https://github.com/kritikaparmar-programmer/HealthCheck/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=kritikaparmar-programmer/HealthCheck" />
+</a>
+		</td>
+	</tr>
+</table>
+
