@@ -19,7 +19,7 @@ This is a Machine Learning Web Application which can predict three diseases i.e.
 ## 👩‍💻 Technology Stack
 
 #### **Tools**
-- [Python](https://www.w3schools.com/python/python_intro.asp)
+- [Python](https://www.python.org/)
 - [Jupyter Notebook](https://jupyter.org/documentation)
 - [HTML](https://www.w3.org/TR/html52/)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
