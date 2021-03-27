@@ -5,11 +5,11 @@ itsdangerous==1.1.0
 Jinja2==2.11.2
 joblib==1.0.1
 MarkupSafe==1.1.1
-numpy==1.20.1
+numpy
 pandas==1.0.1
 python-dateutil==2.8.1
 pytz==2021.1
 scikit-learn==0.21.1
-scipy==1.6.1
+scipy
 six==1.15.0
 Werkzeug==1.0.1
