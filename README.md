@@ -29,10 +29,12 @@ This is a Machine Learning Web Application which can predict three diaseases i.e
 
 Get your own Fork/Copy of repository by clicking `Fork` button right upper corner.<br><br>
 
+### Machine Learning/ Flask/ API
+
 #### Clone the Forked Repository
 
 ```bash
-$ git clone https://github.com/<your-github-username>/HealthCheck
+$ git clone -b dev https://github.com/<your-github-username>/HealthCheck
 ```
 
 #### Setting up Project
@@ -72,6 +74,50 @@ flask run
 **5.** Go to ` http://127.0.0.1:5000/` and enjoy the application.
 
 **6.** Drop a ⭐ on the Github Repository.
+
+### Flutter App Develpment
+
+#### Clone the Forked Repository
+
+```bash
+$ git clone -b flutter https://github.com/<your-github-username>/HealthCheck
+```
+
+#### Setting up Project
+
+**1.** Open Android Studio or Visual Studio Code.
+
+**2.** Click Open Folder option in the File section and Navigate to ./HealthCheck/HealthCheck_App and select it.
+
+**3. Open Terminal in the editor.**
+
+```bash
+$ flutter packages get
+````
+
+**4.** Start Coding and drop a ⭐ on the Github Repository.
+
+### Adding changes
+
+**1.** Do the required changes in the local repository.
+
+**2. Add the changes**
+
+```bash
+$ git add -A
+````
+
+**2. Commit the changes**
+
+```bash
+$ git commit -m "<your-commit-message>"
+````
+
+**2. Push the changes**
+
+```bash
+$ git push origin <branch-name>
+````
 
 ## 📜 LICENSE
 
