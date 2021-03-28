@@ -73,9 +73,9 @@ flask run
 
 **5.** Go to ` http://127.0.0.1:5000/` and enjoy the application.
 
-**6.** Drop a ⭐ on the Github Repository.
+**6.** Drop a ⭐ on the Github Repository.<br><br>
 
-### Flutter App Develpment
+### Flutter App Develpment<br>
 
 #### Clone the Forked Repository
 
@@ -95,7 +95,7 @@ $ git clone -b flutter https://github.com/<your-github-username>/HealthCheck
 $ flutter packages get
 ````
 
-**4.** Start Coding and drop a ⭐ on the Github Repository.
+**4.** Start Coding and drop a ⭐ on the Github Repository.<br><br>
 
 ### Adding changes
 
