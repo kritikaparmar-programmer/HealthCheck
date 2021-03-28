@@ -18,10 +18,13 @@ This is a Machine Learning Web Application which can predict three diaseases i.e
 
 ## 👩‍💻 Technology Stack
 
-- [Flask](https://github.com/pallets/flask)
+- [Python](https://www.python.org/)
+- [Jupyter Notebook](https://jupyter.org/documentation)
 - [HTML](https://www.w3.org/TR/html52/)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Bootstrap](https://getbootstrap.com/)
+- [Flask](https://github.com/pallets/flask)
+- [Flutter](https://flutter.dev/)
 
 ## 🚀 Quick Start :
 
