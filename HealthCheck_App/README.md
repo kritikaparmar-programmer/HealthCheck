@@ -1,16 +1,38 @@
-# HealthCheck_App
+# 📱 HealthCheck_App
 
-A new Flutter project.
+This is the [Flutter](https://flutter.dev) section for the Health Check Project where we build the UI and functionality parts for mobile app (android & ios).
 
-## Getting Started
+## Getting Started 🏃
 
-This project is a starting point for a Flutter application.
+**New to flutter**
+- [Check out the documentations](https://flutter.dev/docs)
+- [Writing your First Code](https://flutter.dev/docs/get-started/codelab)
+- [Sample Widgets and Designs](https://flutter.dev/docs/cookbook)
 
-A few resources to get you started if this is your first Flutter project:
+**Experienced**
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Welcome Aboard 🤝
+- [UI Designs](https://flutterawesome.com/)
+- [Widgets Designs](https://material.io/develop/flutterhttps://material.io/develop/flutter)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tech & Tools 💻
+
+- [Flutter](https://flutter.dev)
+- [Dart](https://dart.dev/)
+- [Firebase](https://firebase.google.com/)
+
+## Screenshots 📷
+  Home Screen              |   Settings Page               
+:-------------------------:|:-------------------------: 
+![](https://github.com/utkarsh0702/HealthCheck/blob/flutter/HealthCheck_App/Screenshots/home.png)|![](https://github.com/utkarsh0702/HealthCheck/blob/flutter/HealthCheck_App/Screenshots/settings.png)
+
+## Directory Structure 📓
+
+```
+lib
+│─── main.dart       
+└─── Screens
+       │── about.dart
+       |── category.dart
+       └── settings.dart
+```
