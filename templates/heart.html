@@ -2,22 +2,20 @@
 
 {% block body %}
 <br>
-<div class="container">
+<div class="container px-2 col-lg-5 col-sm-12">
     <h1 class="text-center">Heart Disease Prediction</h1>
-</div>
-    	<div class="center">
     		<form action="{{ url_for('predict_heart') }}" method="POST">
-                <input class="form-input" type="text" name="age" placeholder="Age (years) eg. 34"><br>
-                <input class="form-input" type="text" name="sex" placeholder="Sex (eg. 0: Female, 1:Male)"><br>
-                <input class="form-input" type="text" name="chestpaintype" placeholder="Chest Pain Type"><br>
-                <input class="form-input" type="text" name="trestbps" placeholder="Trestbps"><br>
-                <input class="form-input" type="text" name="serumcholestoral" placeholder="Serum cholestoral in mg/dl"><br>
-                <input class="form-input" type="text" name="restecg" placeholder="Restecg"><br>
-                <input class="form-input" type="text" name="thalach" placeholder="Thalach"><br>
-                <input class="form-input" type="text" name="exang" placeholder="Exang"><br>
-                <input class="form-input" type="text" name="oldpeak" placeholder="Oldpeak"><br>
-                <input class="form-input" type="text" name="slope" placeholder="Slope"><br>
-                <input class="form-input" type="text" name="thal" placeholder="Thal"><br>
+                <input class="form-input" type="text" name="age" placeholder="Age (years) eg. 34" required><br>
+                <input class="form-input" type="text" name="sex" placeholder="Sex (eg. 0: Female, 1:Male)" required><br>
+                <input class="form-input" type="text" name="chestpaintype" placeholder="Chest Pain Type" required><br>
+                <input class="form-input" type="text" name="trestbps" placeholder="Trestbps" required><br>
+                <input class="form-input" type="text" name="serumcholestoral" placeholder="Serum cholestoral in mg/dl" required><br>
+                <input class="form-input" type="text" name="restecg" placeholder="Restecg" required><br>
+                <input class="form-input" type="text" name="thalach" placeholder="Thalach" required><br>
+                <input class="form-input" type="text" name="exang" placeholder="Exang" required><br>
+                <input class="form-input" type="text" name="oldpeak" placeholder="Oldpeak" required><br>
+                <input class="form-input" type="text" name="slope" placeholder="Slope" required><br>
+                <input class="form-input" type="text" name="thal" placeholder="Thal" required><br>
         		<input type="submit" class="my-cta-button" value="Predict">
         	</form>
     	</div>

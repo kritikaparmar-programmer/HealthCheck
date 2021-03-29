@@ -1,12 +1,12 @@
 {% extends "layout.html" %}
 
 {% block body %}
-<div class="container" style="color: purple;">
+<div class="container col-lg-6 col-sm-11" style="color: purple;">
     <h1 class="text-center"><u><b>Fetal Health Prediction</b></u></h1>
-</div>
+
 
 <!-- Taking Input Data Area -->
-<div class="center" id="entry_form" style="display: none;">
+<div id="entry_form" style="display: none;">
     <form action="/fetal_health" method="POST" style="font-weight: 600;">
         <div class="form-group">
             <label for="">Baseline Value *</label>
@@ -136,7 +136,7 @@
     </div>
 
 </div>
-
+</div>
 <script>
     let entry_form = document.getElementById('entry_form');
     let show_result = document.getElementById('show_result');
