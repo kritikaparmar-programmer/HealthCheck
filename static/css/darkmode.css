@@ -2,7 +2,7 @@
 
 /* css for toggle button */
 .switch{
-  position: absolute;
+  position:fixed;
   z-index: 10000;
   top:2rem;
   right:-1.7rem;
@@ -171,7 +171,7 @@
   @media screen and (max-width: 600px) {
       
     .switch{
-        position: absolute;
+        position: fixed;
         z-index: 10000;
         top:1.8rem;
         right:2.5rem;
