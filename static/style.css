@@ -5,6 +5,12 @@
  */
 body {
   padding-top: 56px;
+  background-color: rgb(185, 203, 255);
+}
+.mynav , .mynav a 
+{
+  color: black;
+  background-color: #f8f9fa;
 }
 .center {
   margin: auto;
@@ -87,3 +93,25 @@ font-weight: 300;
 .jumbotron .container {
 max-width: 40rem;
 }
+
+/* movede from layout to here */
+.footer {
+  background-color: rgb(233, 231, 231);
+  color: Black;
+  text-align: center;
+}
+/* css for dark mode */
+.dark-mode , .dark-mode .row , .dark-mode .text-center a
+{
+  background-color:black;
+  background-image: linear-gradient(180deg, black 10%, black 100%);
+  background-size: cover;
+  color:#fff;
+}
+
+.dark-mode .mynav ,.dark-mode .mynav a ,.dark-mode .footer , .dark-mode .card
+{
+  color: #fff;
+  background-color: #3e3c3c;
+}
+
