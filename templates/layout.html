@@ -15,13 +15,17 @@
 
   <!-- Custom styles for this template -->
   <link href="static/style.css" rel="stylesheet">
-    
+  <link rel="stylesheet" href="static/css/darkmode.css">
+  <style>
+  {% block css %}{% endblock css %}
+  </style>
 </head>
 
-<body style="background-color: rgb(185, 203, 255);">
-  
+<body>
+    <input type="checkbox" id="toggle" name="checkbox" class="switch" onclick="myfun()">
+
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+  <nav class="navbar navbar-expand-lg shadow fixed-top mynav">
     <div class="container">
       <a class="navbar-brand" href="/">Health Check</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,15 +50,6 @@
     
     {% block body %} {% endblock %}
     
-
-    <style>
-      .footer {
-        background-color: rgb(233, 231, 231);
-        color: Black;
-        text-align: center;
-      }
-      </style>
-      
       <div class="footer container-fluid fixed-bottom pt-4 pb-1 ">
         <p>Made with ❤ By Kritika Parmar<br>
         </p>
@@ -66,7 +61,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="static/vendor/jquery/jquery.min.js"></script>
   <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
+  <script src="static/js/darkmode.js"></script>
 </body>
 
 </html>
