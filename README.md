@@ -47,7 +47,7 @@ To make your local copy of the repository follow the steps:
   
 ##### For Flask:
 ```bash
-$ git clone -b dev https://github.com/<your-github-username>/HealthCheck
+$ git clone https://github.com/<your-github-username>/HealthCheck
 ```
 ##### For Flutter App Develpment:
 ```bash
@@ -69,7 +69,7 @@ git remote -v
 ```
 Keep your cloned repo upto date by pulling from upstream (this will also avoid any merge conflicts while committing new changes)
 ```bash
-git pull upstream master
+git pull upstream main
 ```
 
 #### Step 4: Setting up Project
