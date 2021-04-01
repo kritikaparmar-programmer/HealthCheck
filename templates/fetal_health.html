@@ -1,7 +1,17 @@
 {% extends "layout.html" %}
+{% block css %}
 
+.container
+{
+    color: purple;
+}
+.dark-mode .container
+{
+    color:#fff;
+}
+{% endblock css %}
 {% block body %}
-<div class="container col-lg-6 col-sm-11" style="color: purple;">
+<div class="container col-lg-6 col-sm-11">
     <h1 class="text-center"><u><b>Fetal Health Prediction</b></u></h1>
 
 
