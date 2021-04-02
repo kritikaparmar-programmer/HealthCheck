@@ -19,6 +19,18 @@ body {
   color: black;
   background-color: #f8f9fa;
 }
+a:hover , .mynav a:hover , .dropdown-menu .dropdown-item a:hover
+{
+  background-color: rgb(185, 203, 255);
+  border-radius: 50px;
+  transition: 1s;
+}
+.dark-mode .mynav a:hover
+{
+  background-color:rgb(0, 225, 255);
+  border-radius: 50px;
+  transition: 1s;
+}
 .center {
   margin: auto;
   width: 50%;
@@ -121,7 +133,11 @@ max-width: 40rem;
   color: #fff;
   background-color: #3e3c3c;
 }
-
+.dark-mode .dropdown-menu .dropdown-item 
+{
+  background-color: #fff;
+  color: black;
+}
 .dark-mode .navbar-toggler
 {
   background-color: #fff;
