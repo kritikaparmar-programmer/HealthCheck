@@ -87,3 +87,12 @@ font-weight: 300;
 .jumbotron .container {
 max-width: 40rem;
 }
+
+.lb-lg {
+  font-size: 20px;
+}
+
+
+.container-castome{
+  width: 60%;
+}

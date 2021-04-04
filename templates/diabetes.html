@@ -3,21 +3,67 @@
 {% block body %}
 <br>
 <div class="container">
-    <h1 class="text-center">Diabetes Prediction</h1>
-</div>
-        <!-- Text Area -->
-    	<div class="center">
-    		<form action="{{ url_for('predict_diabetes') }}" method="POST">
-                <input class="form-input" type="text" name="pregnancies" placeholder="Number of Pregnancies eg. 0"><br>
-                <input class="form-input" type="text" name="glucose" placeholder="Glucose (mg/dL) eg. 80"><br>
-                <input class="form-input" type="text" name="bloodpressure" placeholder="Blood Pressure (mmHg) eg. 80"><br>
-                <input class="form-input" type="text" name="skinthickness" placeholder="Skin Thickness (mm) eg. 20"><br>
-                <input class="form-input" type="text" name="insulin" placeholder="Insulin Level (IU/mL) eg. 80"><br>
-                <input class="form-input" type="text" name="bmi" placeholder="Body Mass Index (kg/m²) eg. 23.1"><br>
-                <input class="form-input" type="text" name="dpf" placeholder="Diabetes Pedigree Function eg. 0.52"><br>
-                <input class="form-input" type="text" name="age" placeholder="Age (years) eg. 34"><br>
+    <h1 class="text-center mb-2 pb-2"><u>Diabetes Prediction</u></h1>
 
-        		<input type="submit" class="my-cta-button" value="Predict">
-        	</form>
-    	</div>
+    <!-- Text Area -->
+    <div class="container-castome mx-auto">
+        <form action="{{ url_for('predict_diabetes') }}" method="POST">
+            <div class="form-group">
+                <label class="lb-lg">Number of Pregnancies</label>
+                <input type="text" class="form-control" name="pregnancies" placeholder="Number of Pregnancies eg. 0">
+            </div>
+
+            <div class="form-group">
+                <label class="lb-lg">Glucose</label>
+                <input type="text" class="form-control" name="glucose" placeholder="Glucose (mg/dL) eg. 80">
+            </div>
+
+            <div class="form-group">
+                <label class="lb-lg">Blood Pressure</label>
+                <input type="text" class="form-control" name="bloodpressure" placeholder="Blood Pressure (mmHg) eg. 80">
+            </div>
+
+            <div class="form-group">
+                <label class="lb-lg">Skin Thickness</label>
+                <input type="text" class="form-control" name="skinthickness" placeholder="Skin Thickness (mm) eg. 20">
+            </div>
+
+            <div class="form-group">
+                <label class="lb-lg">Insulin Level</label>
+                <input type="text" class="form-control" name="insulin" placeholder="Insulin Level (IU/mL) eg. 80">
+            </div>
+
+            <div class="form-group">
+                <label class="lb-lg">Body Mass Index</label>
+                <input type="text" class="form-control" name="bmi" placeholder="Body Mass Index (kg/m²) eg. 23.1">
+            </div>
+
+            <div class="form-group">
+                <label class="lb-lg">Diabetes Pedigree Function</label>
+                <input type="text" class="form-control" name="dpf" placeholder="Diabetes Pedigree Function eg. 0.52">
+            </div>
+
+            <div class="form-group">
+                <label class="lb-lg">Age</label>
+                <input type="text" class="form-control" name="age" placeholder="Age (years) eg. 34">
+            </div>
+
+
+            <div class="text-center mb-5 pb-4">
+                <input type="submit" class="my-cta-button" value="Predict">
+            </div>
+        </form>
+    </div>
+</div>
 {% endblock %}
+<!-- 
+<form>
+    <div class="form-group">
+      <label for="formGroupExampleInput">Example label</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+    </div>
+    <div class="form-group">
+      <label for="formGroupExampleInput2">Another label</label>
+      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+    </div>
+  </form> -->

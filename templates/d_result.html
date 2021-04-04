@@ -6,7 +6,7 @@
     <h1 class="text-center">Diabetes Prediction Result</h1>
 </div>
 		<!-- Result -->
-		<div class="center">
+		<div class="text-center">
 			{% if prediction==1 %}
 				<h1>Prediction: <span class='danger'>Oops! You have DIABETES.</span></h1>
 				<img class="gif" src="{{ url_for('static', filename='diabetes.jpg') }}" alt="Diabetes Image">
