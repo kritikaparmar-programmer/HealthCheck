@@ -2,18 +2,18 @@
 
 {% block body %}
 <br><br>
-<div class="container" text>
+<div class="container mb-5 pb-5">
     <h1 class="text-center">Heart Disesase Prediction Result</h1>
 </div>
-		<!-- Result -->
-		<div class="text-center">
-			{% if prediction==1 %}
-				<h1>Prediction: <span class='danger'>Oops! You have Heart Disesase.</span></h1>
-				<img class="gif" src="{{ url_for('static', filename='sad.gif') }}" alt="Image">
-			{% elif prediction==0 %}
-				<h1>Prediction: <span class='safe'>Great! You DON'T have Heart Disesase.</span></h1>
-				<img class="gif1" src="{{ url_for('static', filename='no-diabetes.gif') }}" alt="Image">
-			{% endif %}
-		</div>
+	<!-- Result -->
+	<div class="text-center">
+		{% if prediction==1 %}
+			<h1>Prediction: <span class='danger'>Oops! You have Heart Disesase.</span></h1>
+			<img class="gif" src="{{ url_for('static', filename='sad.gif') }}" alt="Image">
+		{% elif prediction==0 %}
+			<h1>Prediction: <span class='safe'>Great! You DON'T have Heart Disesase.</span></h1>
+			<img class="gif1" src="{{ url_for('static', filename='no-diabetes.gif') }}" alt="Image">
+		{% endif %}
+	</div>
 
 {% endblock %}
