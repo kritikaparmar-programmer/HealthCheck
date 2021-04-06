@@ -113,6 +113,15 @@ font-weight: 300;
 max-width: 40rem;
 }
 
+.lb-lg {
+  font-size: 20px;
+}
+
+
+.container-castome{
+  width: 60%;
+}
+
 /* movede from layout to here */
 .footer {
   background-color: rgb(233, 231, 231);
