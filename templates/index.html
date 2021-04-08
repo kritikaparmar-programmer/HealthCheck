@@ -8,7 +8,7 @@
   
 <br>
  
-<div class="container">
+<div class="container mb-5 pb-5">
     <div class="row">
       <div class="col-md-4 mb-5">
         <div class="card h-100">
@@ -43,6 +43,18 @@
           </div>
           <div class="card-footer">
             <a href="{{ url_for('cancer') }}" class="btn btn-primary">Take Test!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="{{ url_for('static', filename='fetal_image.jpeg') }}" width="150" height="200" alt="fetal image">
+          <div class="card-body">
+            <h4 class="card-title">Fetal Health Prediction</h4>
+            <h6 class="card-text"></h6>
+          </div>
+          <div class="card-footer">
+            <a href="/fetal_health" class="btn btn-primary">Take Test!</a>
           </div>
         </div>
       </div>
