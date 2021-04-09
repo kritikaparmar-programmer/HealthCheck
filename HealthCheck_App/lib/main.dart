@@ -1,6 +1,8 @@
+import 'package:HealthCheck_App/Screens/DiseaseDetection/parkinsonsdiseasese_detection.dart';
+import 'package:HealthCheck_App/Screens/category.dart';
+import 'package:HealthCheck_App/Screens/DiseaseSelection/disease_selection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:HealthCheck_App/Screens/category.dart';
 import 'package:HealthCheck_App/Screens/settings.dart';
 import 'package:HealthCheck_App/Screens/about.dart';
 
