@@ -1,0 +1,27 @@
+{%extends "layout.html"%}
+
+{% block body %}
+<br>
+<div class="container px-2 col-lg-5 col-sm-12">
+    <h1 class="text-center">Stroke Prediction Test</h1>
+    <form action="{{url_for('predict_stroke')}}" method="POST">
+        <input class="form-input" type="text" name="gender" placeholder="gender e.g. 0: Female, 1:Male" required><br>
+        <input class="form-input" type="text" name="age" placeholder="age e.g. 40-80 " required><br>
+        <input class="form-input" type="text" name="hypertnsion" placeholder="hypertnsion e.g. 0" required><br>
+        <input class="form-input" type="text" name="heart disease" placeholder="heart disease e.g. 0" required><br>
+        <input class="form-input" type="text" name="marital status" placeholder="marital status eg. 1:Yes,0:No"
+            required><br>
+        <input class="form-input" type="text" name="work"
+            placeholder="Working Status e.g. 0:Govt_job,1:Never_worked,2:Private,3:Self-employed,4:children"
+            required><br>
+        <input class="form-input" type="text" name="residence" placeholder="residence e.g. 0:Rural,1:Urban"
+            required><br>
+        <input class="form-input" type="text" name="glucose level" placeholder="glucose level e.g. 50.00-280.00"
+            required><br>
+        <input class="form-input" type="text" name="body mass index" placeholder="BMI e.g. 10.00-100.00" required><br>
+        <input class="form-input" type="text" name="smoking status"
+            placeholder="smoking status e.g. 0:Unknown,1:formerly smoked,2:never smoked,3:smokes" required><br>
+        <input type="submit" class="my-cta-button" value="Predict">
+    </form>
+</div>
+{% endblock %}
