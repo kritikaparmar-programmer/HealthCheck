@@ -1,0 +1,16 @@
+{%extends "layout.html"%}
+
+{%block body%}
+<br><br>
+<div class="container mb-5 pb-5">
+    <h1 class="text-center">Stroke Prediction Result</h1>
+
+    {% if prediction==1 %}
+    <h1>Prediction:<span class='danger'>Possibility of stroke is HIGH</span></h1>
+    <img class="gif" src="{{ url_for('static', filename='Sakura_stroke.png') }}" alt="Stroke Image">
+    {% elif prediction==0 %}
+    <h1>Prediction:<span class='safe'>Great!Chances of stroke is LESS</span></h1>
+    <img class="gif" src="{{ url_for('static', filename='Naruto_stroke.png') }}" alt="Not Stroke Image">
+    {% endif %}
+</div>
+{%endblock%}
