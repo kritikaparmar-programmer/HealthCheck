@@ -114,17 +114,22 @@ def heart():
 def predict_heart():
 
     if request.method == 'POST':
-        to_predict_list = request.form.to_dict()
-        to_predict_list = list(to_predict_list.values())
-        to_predict_list = list(map(float, to_predict_list))
-        result = ValuePredictor(to_predict_list, 11)
+        try:
+            to_predict_list = request.form.to_dict()
+            to_predict_list = list(to_predict_list.values())
+            to_predict_list = list(map(float, to_predict_list))
+            result = ValuePredictor(to_predict_list, 11)
 
-    if(int(result) == 1):
-        prediction = 1
-    else:
-        prediction = 0
+            if(int(result) == 1):
+                prediction = 1
+            else:
+                prediction = 0
 
-    return render_template('h_result.html', prediction=prediction)
+            return render_template('h_result.html', prediction=prediction)
+        except ValueError:
+            flash(
+                'Invalid input. Please fill in the form with appropriate values', 'info')
+            return redirect(url_for('heart'))
 
 
 # this function use to predict the output for Fetal Health from given data
