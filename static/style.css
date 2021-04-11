@@ -5,6 +5,31 @@
  */
 body {
   padding-top: 56px;
+  background-color: rgb(185, 203, 255);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler
+{
+  background-color: #a29e9e5c;
+}
+.mynav , .mynav a 
+{
+  color: black;
+  background-color: #f8f9fa;
+}
+a:hover , .mynav a:hover , .dropdown-menu .dropdown-item a:hover
+{
+  background-color: rgb(185, 203, 255);
+  border-radius: 50px;
+  transition: 1s;
+}
+.dark-mode .mynav a:hover
+{
+  background-color:rgb(0, 225, 255);
+  border-radius: 50px;
+  transition: 1s;
 }
 .center {
   margin: auto;
@@ -14,8 +39,8 @@ body {
 
 .form-input {
 	text-align: center;
-	width: 350px;
-	height: 25px;
+	width: 100%;
+	height: 1.5rem;
 	margin-bottom: 5px;
 }
 
@@ -86,4 +111,43 @@ font-weight: 300;
 
 .jumbotron .container {
 max-width: 40rem;
+}
+
+.lb-lg {
+  font-size: 20px;
+}
+
+
+.container-castome{
+  width: 60%;
+}
+
+/* movede from layout to here */
+.footer {
+  background-color: rgb(233, 231, 231);
+  color: Black;
+  text-align: center;
+}
+/* css for dark mode */
+.dark-mode , .dark-mode .row , .dark-mode .text-center a
+{
+  background-color:black;
+  background-image: linear-gradient(180deg, black 10%, black 100%);
+  background-size: cover;
+  color:#fff;
+}
+
+.dark-mode .mynav ,.dark-mode .mynav a ,.dark-mode .footer , .dark-mode .card
+{
+  color: #fff;
+  background-color: #3e3c3c;
+}
+.dark-mode .dropdown-menu .dropdown-item 
+{
+  background-color: #fff;
+  color: black;
+}
+.dark-mode .navbar-toggler
+{
+  background-color: #fff;
 }
