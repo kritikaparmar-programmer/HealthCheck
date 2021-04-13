@@ -13,8 +13,8 @@ app = Flask(__name__)
 # Load the Random Forest CLassifier model
 filename = 'Models/diabetes-model.pkl'
 filename1 = 'Models/cancer-model.pkl'
-classifier =1 # pickle.load(open(filename, 'rb'))
-rf = 1 #pickle.load(open(filename1, 'rb'))
+classifier =pickle.load(open(filename, 'rb'))
+rf = pickle.load(open(filename1, 'rb'))
 
 
 @app.route('/')
