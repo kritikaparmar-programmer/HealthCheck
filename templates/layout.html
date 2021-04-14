@@ -9,25 +9,25 @@
   <meta name="author" content="">
 
   <title>Health Check</title>
-
+  <link rel="icon" href="static/favicon.ico" type="image/gif" sizes="16x16">
   <!-- Bootstrap core CSS -->
   <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="static/style.css" rel="stylesheet">
-    
+  <link rel="stylesheet" href="static/css/darkmode.css">
+  <style>
+  {% block css %}{% endblock css %}
+  </style>
 </head>
 
-<body style="background-color: rgb(185, 203, 255); background-repeat: no-repeat; background-size: 100% 100%;">
-  <style>.center {
-		margin: auto;
-		width: 50%;
-		padding: 10px;
-	}</style>
+<body>
+    <input type="checkbox" id="toggle" name="checkbox" class="switch" onclick="myfun()">
+
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+  <nav class="navbar navbar-expand-lg shadow fixed-top mynav">
     <div class="container">
-      <a class="navbar-brand" href="#">Health Check</a>
+      <a class="navbar-brand" href="/">Health Check</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -38,33 +38,32 @@
               <span class="sr-only">(current)</span>
             </a>
           </li>
+           <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Diseases
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/diabetes">Diabetes Prediction</a>
+          <a class="dropdown-item" href="/heart">Heart Disease Prediction</a>
+          <a class="dropdown-item" href="/cancer">Cancer Prediction</a>
+          <a class="dropdown-item" href="/fetal_health">Fetal Health Prediction</a>
+          
+        </div>
+      </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('about') }}">About</a>
           </li>
+          
         </ul>
       </div>
     </div>
   </nav>
 <br>
-    <div class='container pb-5'>
+    
     {% block body %} {% endblock %}
-    </div>
-
-    <style>
-      .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: rgb(233, 231, 231);
-        color: Black;
-        text-align: center;
-      }
-      </style>
-      
-      <div class="footer">
-        <p>Made with ❤<br>
-         By Kritika Parmar<br>
+    
+      <div class="footer container-fluid fixed-bottom pt-4 pb-1 ">
+        <p>Made with ❤ By Kritika Parmar<br>
         </p>
       </div>
     
@@ -72,9 +71,9 @@
     
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/js/darkmode.js"></script>
 </body>
 
 </html>
