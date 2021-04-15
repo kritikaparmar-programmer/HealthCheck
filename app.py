@@ -217,7 +217,7 @@ def malariapredict():
                 img = np.asarray(img)
                 img = img.reshape((1,50,50,3))
                 img = img.astype(np.float64)
-                model = load_model("Models/malaria-model.h5")
+                
                 model_path="Models/malaria-model.h5"
                 model = tf.keras.models.load_model(model_path)
                 pred = np.argmax(model.predict(img)[0])
