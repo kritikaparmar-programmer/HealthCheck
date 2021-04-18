@@ -203,6 +203,7 @@ def predict_stroke():
 
 
 
+
 @app.route("/malaria", methods=['GET', 'POST'])
 def malaria():
     return render_template('malaria.html')
@@ -226,6 +227,11 @@ def malariapredict():
             return render_template('malaria.html', message = message)
     return render_template('malaria_predict.html', pred = pred)
 
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
