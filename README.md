@@ -20,7 +20,7 @@ This is a Machine Learning Web Application which can predict three diseases i.e.
 
 #### **Tools**
 
-- [Python](https://www.python.org/)
+<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/> 
 - [Jupyter Notebook](https://jupyter.org/documentation)
 - [HTML](https://www.w3.org/TR/html52/)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
