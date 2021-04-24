@@ -185,39 +185,8 @@ max-width: 40rem;
           transform: rotate(360deg);
 }
 
-.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
-  font-size: 25px;
-}
 
-.rounded-social-buttons .social-button.facebook {
-  background: #3b5998;
-}
 
-.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
-  color: #3b5998;
-  background: #fefefe;
-  border-color: #3b5998;
-}
-
-.rounded-social-buttons .social-button.twitter {
-  background: #55acee;
-}
-
-.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
-  color: #55acee;
-  background: #fefefe;
-  border-color: #55acee;
-}
-
-.rounded-social-buttons .social-button.linkedin {
-  background: #007bb5;
-}
-
-.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
-  color: #007bb5;
-  background: #fefefe;
-  border-color: #007bb5;
-}
 
 .rounded-social-buttons .social-button.github {
   background: black;
@@ -228,23 +197,4 @@ max-width: 40rem;
   background: #ffff;
   border-color: black;
 }
-
-.rounded-social-buttons .social-button.instagram {
-  background: #d52c79;
-}
-
-.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
-  color: #125688;
-  background: #fefefe;
-  border-color: #125688;
-}
-.rounded-social-buttons .social-button.whatsapp {
-  background:#4ced69;
-}
-.rounded-social-buttons .social-button.whatsapp:hover, .rounded-social-buttons .social-button.whatsapp:focus {
-  color:#4ced69;
-  background: #fefefe;
-  border-color:#4ced69 ;
-}
-
     </style>
