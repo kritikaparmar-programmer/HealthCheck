@@ -210,6 +210,29 @@ def predict_stroke():
             prediction = 0
         return render_template('st_result.html', prediction=prediction)
 
+def liverprediction(final_features):
+     #Loading the pickle file
+        model_path = 'Models/liver-disease_model.pkl'
+        model = pickle.load(open(model_path,'rb'))
+        result = model.predict(final_features)
+        return result[0]
+        
+@app.route('/liver')
+def liver():
+    return render_template('liver.html')
+
+@app.route('/predict_liver', methods =['POST'])
+#predicting
+def predict_liver_disease():
+    
+    if request.method == 'POST':
+        int_features = [float(x) for x in request.form.values()]
+        final_features = [np.array(int_features)]
+        output = liverprediction(final_features)
+        pred = int(output)
+
+        return render_template('liver_result.html', prediction=pred)
+
 
 
 
