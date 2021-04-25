@@ -14,6 +14,17 @@
 .card img {
   border-radius:10px;
 }
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  .card
+{
+  margin-bottom:20px;
+  border-radius:10px;
+  height:auto;
+  max-height:55vh;
+  overflow:hidden;
+}
+}
 {% endblock css %}
 {% block body %}
 
