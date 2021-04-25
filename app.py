@@ -14,7 +14,7 @@ app.secret_key = 'O.\x89\xcc\xa0>\x96\xf7\x871\xa2\xe6\x9a\xe4\x14\x91\x0e\xe5)\
 # Load the Random Forest CLassifier model
 filename = 'Models/diabetes-model.pkl'
 filename1 = 'Models/cancer-model.pkl'
-classifier =pickle.load(open(filename, 'rb'))
+classifier = pickle.load(open(filename, 'rb'))
 rf = pickle.load(open(filename1, 'rb'))
 
 
@@ -210,21 +210,24 @@ def predict_stroke():
             prediction = 0
         return render_template('st_result.html', prediction=prediction)
 
+
 def liverprediction(final_features):
-     #Loading the pickle file
-        model_path = 'Models/liver-disease_model.pkl'
-        model = pickle.load(open(model_path,'rb'))
-        result = model.predict(final_features)
-        return result[0]
-        
+    # Loading the pickle file
+    model_path = 'Models/liver-disease_model.pkl'
+    model = pickle.load(open(model_path, 'rb'))
+    result = model.predict(final_features)
+    return result[0]
+
+
 @app.route('/liver')
 def liver():
     return render_template('liver.html')
 
-@app.route('/predict_liver', methods =['POST'])
-#predicting
+
+@app.route('/predict_liver', methods=['POST'])
+# predicting
 def predict_liver_disease():
-    
+
     if request.method == 'POST':
         int_features = [float(x) for x in request.form.values()]
         final_features = [np.array(int_features)]
@@ -234,38 +237,35 @@ def predict_liver_disease():
         return render_template('liver_result.html', prediction=pred)
 
 
-
-
-
-
 @app.route("/malaria", methods=['GET', 'POST'])
 def malaria():
     return render_template('malaria.html')
 
-@app.route("/malariapredict", methods = ['POST', 'GET'])
+
+@app.route("/malariapredict", methods=['POST', 'GET'])
 def malariapredict():
     if request.method == 'POST':
         try:
             if 'image' in request.files:
                 img = Image.open(request.files['image'])
-                img = img.resize((50,50))
+                img = img.resize((50, 50))
                 img = np.asarray(img)
-                img = img.reshape((1,50,50,3))
+                img = img.reshape((1, 50, 50, 3))
                 img = img.astype(np.float64)
-                
-                model_path="Models/malaria-model.h5"
+
+                model_path = "Models/malaria-model.h5"
                 model = tf.keras.models.load_model(model_path)
                 pred = np.argmax(model.predict(img)[0])
         except:
             message = "Please upload an Image"
-            return render_template('malaria.html', message = message)
-    return render_template('malaria_predict.html', pred = pred)
-
+            return render_template('malaria.html', message=message)
+    return render_template('malaria_predict.html', pred=pred)
 
 
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
