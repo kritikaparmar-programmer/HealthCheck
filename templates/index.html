@@ -2,27 +2,27 @@
 {% block css %}
 .card
 {
-  margin-bottom:20px;
-  border-radius:10px;
-  height:auto;
-  max-height:50vh;
-  overflow:hidden;
+margin-bottom:20px;
+border-radius:10px;
+height:auto;
+max-height:56vh;
+overflow:hidden;
 }
 .card:hover {
-  background-color:#87a4f6;
+background-color:#87a4f6;
 }
 .card img {
-  border-radius:10px;
+border-radius:10px;
 }
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
-  .card
+.card
 {
-  margin-bottom:20px;
-  border-radius:10px;
-  height:auto;
-  max-height:55vh;
-  overflow:hidden;
+margin-bottom:20px;
+border-radius:10px;
+height:auto;
+max-height:55vh;
+overflow:hidden;
 }
 }
 {% endblock css %}
@@ -35,7 +35,6 @@
 <br>
 
 <div class="container-fluid px-5 mb-3 pb-3">
-
   <div class="row">
 
     <div class="col-lg-3 col-md-4 col-sm-11">
@@ -52,6 +51,7 @@
         </div>
       </div>
     </div>
+
     <div class="col-lg-3 col-md-4 col-sm-11">
       <div class="card">
         <img class="card-img-top"
@@ -66,6 +66,7 @@
         </div>
       </div>
     </div>
+
     <div class="col-lg-3 col-md-4 col-sm-11">
       <div class="card">
         <img class="card-img-top" src="{{ url_for('static', filename='cancer_.png') }}" width="150" height="200" alt="">
@@ -78,6 +79,7 @@
         </div>
       </div>
     </div>
+
     <div class="col-lg-3 col-md-4 col-sm-11">
       <div class="card">
         <img class="card-img-top" src="{{ url_for('static', filename='fetal_image.jpeg') }}" width="150" height="200"
@@ -91,35 +93,38 @@
         </div>
       </div>
     </div>
+
     <div class="col-lg-3 col-md-4 col-sm-11">
       <div class="card">
         <img class="card-img-top" src="{{url_for('static',filename='stroke.png')}}" width="150" height="200" alt="">
         <div class="card-body">
           <h4 class="card-title">Stroke Prediction</h4>
           <h6 class="card-text"></h6>
-          </div>
-          <div class="card-footer">
-            <a href="{{ url_for('stroke') }}" class="btn btn-primary">Take Test!</a>
-          </div>
+        </div>
+        <div class="card-footer">
+          <a href="{{ url_for('stroke') }}" class="btn btn-primary">Take Test!</a>
         </div>
       </div>
+    </div>
 
-      <div class="col-lg-3 col-md-4 col-sm-11">
+    <div class="col-lg-3 col-md-4 col-sm-11">
       <div class="card">
         <img class="card-img-top" src="{{url_for('static',filename='liver.jpg')}}" width="150" height="200" alt="">
         <div class="card-body">
           <h4 class="card-title">Liver Disease Prediction</h4>
           <h6 class="card-text"></h6>
+        </div>
           <div class="card-footer">
             <a href="{{ url_for('liver') }}" class="btn btn-primary">Take Test!</a>
           </div>
         </div>
       </div>
-    </div>
+      
+
   </div>
 </div>
 
-  <!-- /.row 
+<!-- /.row 
 
     
     <div class="col-md-4 mb-5">
@@ -164,4 +169,4 @@
     </div>-->
 
 
-  {% endblock %}
+{% endblock %}
