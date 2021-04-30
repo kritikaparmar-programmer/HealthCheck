@@ -1,17 +1,44 @@
 {% extends "layout.html" %}
-
+{% block css %}
+.card
+{
+margin-bottom:20px;
+border-radius:10px;
+height:auto;
+max-height:56vh;
+overflow:hidden;
+}
+.card:hover {
+background-color:#87a4f6;
+}
+.card img {
+border-radius:10px;
+}
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+.card
+{
+margin-bottom:20px;
+border-radius:10px;
+height:auto;
+max-height:55vh;
+overflow:hidden;
+}
+}
+{% endblock css %}
 {% block body %}
 
-<div class="container">
+<div class="container-fluid px-0 py-0">
   <img class="card-img-top" src="/static/bg_healthcheck.png" alt="">
 </div>
 
 <br>
 
-<div class="container mb-5 pb-5">
+<div class="container-fluid px-5 mb-3 pb-3">
   <div class="row">
-    <div class="col-md-4 mb-5">
-      <div class="card h-100">
+
+    <div class="col-lg-3 col-md-4 col-sm-11">
+      <div class="card">
         <img class="card-img-top"
           src="https://partheniumprojects.com/wp-content/uploads/2018/12/Diabetes-prediction-2.png" width="150"
           height="200" alt="">
@@ -24,8 +51,9 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 mb-5">
-      <div class="card h-100">
+
+    <div class="col-lg-3 col-md-4 col-sm-11">
+      <div class="card">
         <img class="card-img-top"
           src="https://i1.wp.com/www.md2c.nl/wp-content/uploads/2016/06/predict-heart-disease.jpg?fit=480%2C360"
           width="150" height="200" alt="">
@@ -38,8 +66,9 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 mb-5">
-      <div class="card h-100">
+
+    <div class="col-lg-3 col-md-4 col-sm-11">
+      <div class="card">
         <img class="card-img-top" src="{{ url_for('static', filename='cancer_.png') }}" width="150" height="200" alt="">
         <div class="card-body">
           <h4 class="card-title">Cancer Prediction</h4>
@@ -50,8 +79,9 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 mb-5">
-      <div class="card h-100">
+
+    <div class="col-lg-3 col-md-4 col-sm-11">
+      <div class="card">
         <img class="card-img-top" src="{{ url_for('static', filename='fetal_image.jpeg') }}" width="150" height="200"
           alt="fetal image">
         <div class="card-body">
@@ -63,38 +93,40 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 mb-5">
-      <div class="card h-100">
+
+    <div class="col-lg-3 col-md-4 col-sm-11">
+      <div class="card">
         <img class="card-img-top" src="{{url_for('static',filename='stroke.png')}}" width="150" height="200" alt="">
         <div class="card-body">
           <h4 class="card-title">Stroke Prediction</h4>
           <h6 class="card-text"></h6>
-          </div>
-          <div class="card-footer">
-            <a href="{{ url_for('stroke') }}" class="btn btn-primary">Take Test!</a>
-          </div>
+        </div>
+        <div class="card-footer">
+          <a href="{{ url_for('stroke') }}" class="btn btn-primary">Take Test!</a>
         </div>
       </div>
-
     </div>
-      <div class="col-md-4 mb-5">
-      <div class="card h-100">
+
+    <div class="col-lg-3 col-md-4 col-sm-11">
+      <div class="card">
         <img class="card-img-top" src="{{url_for('static',filename='liver.jpg')}}" width="150" height="200" alt="">
         <div class="card-body">
           <h4 class="card-title">Liver Disease Prediction</h4>
           <h6 class="card-text"></h6>
+        </div>
           <div class="card-footer">
             <a href="{{ url_for('liver') }}" class="btn btn-primary">Take Test!</a>
           </div>
         </div>
       </div>
-    </div>
+      
+
   </div>
-    
-  <!-- /.row 
+</div>
+
+<!-- /.row 
 
     
-
     <div class="col-md-4 mb-5">
         <div class="card h-100">
           <img class="card-img-top" src="{{ url_for('static', filename='malaria.jpg') }}" alt="">
@@ -137,5 +169,4 @@
     </div>-->
 
 
-
-  {% endblock %}
+{% endblock %}
