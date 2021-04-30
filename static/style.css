@@ -5,6 +5,31 @@
  */
 body {
   padding-top: 56px;
+  background-color: rgb(185, 203, 255);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler
+{
+  background-color: #a29e9e5c;
+}
+.mynav , .mynav a 
+{
+  color: black;
+  background-color: #f8f9fa;
+}
+a:hover , .mynav a:hover , .dropdown-menu .dropdown-item a:hover
+{
+  background-color: rgb(185, 203, 255);
+  border-radius: 50px;
+  transition: 1s;
+}
+.dark-mode .mynav a:hover
+{
+  background-color:rgb(0, 225, 255);
+  border-radius: 50px;
+  transition: 1s;
 }
 .center {
   margin: auto;
@@ -87,3 +112,89 @@ font-weight: 300;
 .jumbotron .container {
 max-width: 40rem;
 }
+
+.lb-lg {
+  font-size: 20px;
+}
+
+
+.container-castome{
+  width: 60%;
+}
+
+/* movede from layout to here */
+.footer {
+  background-color: rgb(233, 231, 231);
+  color: Black;
+  text-align: center;
+}
+/* css for dark mode */
+.dark-mode , .dark-mode .row , .dark-mode .text-center a
+{
+  background-color:black;
+  background-image: linear-gradient(180deg, black 10%, black 100%);
+  background-size: cover;
+  color:#fff;
+}
+
+.dark-mode .mynav ,.dark-mode .mynav a ,.dark-mode .footer , .dark-mode .card
+{
+  color: #fff;
+  background-color: #3e3c3c;
+}
+.dark-mode .dropdown-menu .dropdown-item 
+{
+  background-color: #fff;
+  color: black;
+}
+.dark-mode .navbar-toggler
+{
+  background-color: #fff;
+}
+
+
+/* css for social media icons */
+
+.rounded-social-buttons {
+  text-align: center;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+
+
+
+.rounded-social-buttons .social-button.github {
+  background: black;
+}
+
+.rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
+  color: black;
+  background: #ffff;
+  border-color: black;
+}
+    </style>
