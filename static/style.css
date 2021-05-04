@@ -151,3 +151,117 @@ max-width: 40rem;
 {
   background-color: #fff;
 }
+
+
+/* css for social media icons */
+
+.rounded-social-buttons {
+  text-align: center;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+
+
+
+.rounded-social-buttons .social-button.github {
+  background: black;
+}
+
+.rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus {
+  color: black;
+  background: #ffff;
+  border-color: black;
+}
+ 
+/* css for wave */
+svg {
+  width:100%;
+}
+.wave {
+  animation: wave 3s linear;
+  animation-iteration-count:infinite;
+  fill:#6283e3;
+}
+.drop {
+  fill: transparent;
+  animation: drop 5s ease infinite normal;
+  stroke: #4478e3;
+  stroke-width:0.5;
+  opacity:.6; 
+  transform: translateY(80%);
+}
+.drop1 {
+  transform-origin: 20px 3px;
+}
+.drop2 {
+  animation-delay: 3s;
+  animation-duration:3s;
+  transform-origin: 25px 3px;
+}
+.drop3 {
+  animation-delay: -2s;
+  animation-duration:3.4s;
+  transform-origin: 16px 3px;
+}
+.gooeff {
+  	filter: url(#goo);
+}
+#wave2 {
+  animation-duration:5s;
+  animation-direction: reverse;
+  opacity: .6
+}
+#wave3 {
+  animation-duration: 7s;
+  opacity:.3;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(80%); 
+    opacity:.6; 
+  }
+  80% {
+    transform: translateY(80%); 
+    opacity:.6; 
+  }
+  90% { 
+    transform: translateY(10%) ; 
+    opacity:.6; 
+  }
+  100% { 
+    transform: translateY(0%) scale(1.5);  
+    stroke-width:0.2;
+    opacity:0; 
+  }
+}
+@keyframes wave {
+  to {transform: translateX(-100%);}
+}
+@keyframes ball {
+  to {transform: translateY(20%);}
+}

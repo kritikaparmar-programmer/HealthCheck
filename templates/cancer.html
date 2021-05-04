@@ -1,8 +1,7 @@
 {% extends "layout.html" %}
 
 {% block body %}
-<br>
-<div class="container px-5 col-lg-8 col-sm-10 text-center mb-5 pb-5">
+<div class="container px-5 col-lg-8 col-sm-10 text-center" style="height:50vh">
     <h1 class="text-center">Breast Cancer Prediction</h1>
     <form action="{{ url_for('predict_cancer') }}" method="POST">
         <div class="row">
