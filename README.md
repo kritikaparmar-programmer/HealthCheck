@@ -3,6 +3,15 @@
 <p align="center">
   <a href="https://github.com/kritikaparmar-programmer/HealthCheck">
     <img src="https://github.com/kritikaparmar-programmer/HealthCheck/blob/main/static/bg_healthcheck.png" alt="image" >
+
+
+    ![Issues](https://img.shields.io/github/issues/kritikaparmar-programmer/HealthCheck)
+![Pull Requests](https://img.shields.io/github/issues-pr/kritikaparmar-programmer/HealthCheck)
+![Forks](https://img.shields.io/github/forks/kritikaparmar-programmer/HealthCheck)
+![Stars](https://img.shields.io/github/stars/kritikaparmar-programmer/HealthCheck)
+[![License](https://img.shields.io/github/license/kritikaparmar-programmer/HealthCheck)](https://github.com/kritikaparmar-programmer/HealthCheck)
+![](https://img.shields.io/github/repo-size/kritikaparmar-programmer/HealthCheck.svg?label=Repo%20size&style=flat-square)&nbsp;
+
   </a>
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
@@ -20,13 +29,13 @@ This is a Machine Learning Web Application which can predict three diseases i.e.
 
 #### **Tools**
 
-- [Python](https://www.python.org/)
-- [Jupyter Notebook](https://jupyter.org/documentation)
-- [HTML](https://www.w3.org/TR/html52/)
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [Bootstrap](https://getbootstrap.com/)
-- [Flask](https://github.com/pallets/flask)
-- [Flutter](https://flutter.dev/)
+<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/> 
+<img alt="Jupyter Notebook" src="https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white"/> 
+<img alt="HTML" src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"/> 
+<img alt="CSS" src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"/> 
+<img alt="BootStrap" src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/> 
+<img alt="Flask" src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white"/> 
+<img alt="Flutter" src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white"/> 
 
 
 ## 🚀 Quick Start :
