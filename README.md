@@ -21,7 +21,7 @@
 
 ## 👀 Introduction
 
-This is a Machine Learning Web Application which can predict three diseases i.e. Diabetes, Heart disease and Cancer. The datasets have been taken from Kaggle. And overall analysis and model building for the diseases have been done in respective Jupyter Notebooks.
+This is a Machine Learning Web Application that can predict three diseases i.e. Diabetes, Heart disease, and Cancer. The datasets have been taken from Kaggle. And overall analysis and model building for the diseases have been done in respective Jupyter Notebooks.
 
 - [Datasets](https://github.com/kritikaparmar-programmer/HealthCheck/tree/main/Datasets)
 
@@ -44,7 +44,7 @@ This is a Machine Learning Web Application which can predict three diseases i.e.
 
 To work on an open-source project, you will first need to make your copy of the repository. To do this, you should fork the repository and then clone it so that you have a local working copy.
 
-Get your own Fork/Copy of repository by clicking `Fork` button right upper corner.<br><br>
+Get your own Fork/Copy of repository by clicking the `Fork` button in right upper corner.<br><br>
 
 #### Step 2: Clone the Forked Repository
 
@@ -64,7 +64,7 @@ $ git clone -b flutter https://github.com/<your-github-username>/HealthCheck
 ```
 
 #### Step 3: Creating a new branch (IMP)
-This is one of the very important step that you should follow to contribute in Open Source. A branch helps to manage the workflow, isolate your code and does not creates a mess. To create a new branch:
+This is one of the very important steps that you should follow to contribute to Open Source. A branch helps to manage the workflow, isolate your code, and does not creates a mess. To create a new branch:
   
 ```bash
 $ git branch <name_of_branch>
@@ -76,7 +76,7 @@ $ git checkout <name_of_branch>
 git remote add upstream https://github.com/kritikaparmar-programmer/HealthCheck
 git remote -v
 ```
-Keep your cloned repo upto date by pulling from upstream (this will also avoid any merge conflicts while committing new changes)
+Keep your cloned repo up to date by pulling from upstream (this will also avoid any merge conflicts while committing new changes)
 ```bash
 git pull upstream main
 ```
@@ -121,7 +121,7 @@ flask run
 ##### For Flutter:
 **1.** Open Android Studio or Visual Studio Code.
 
-**2.** Click Open Folder option in the File section and Navigate to ./HealthCheck/HealthCheck_App and select it.
+**2.** Click the Open Folder option in the File section and Navigate to ./HealthCheck/HealthCheck_App and select it.
 
 **3. Open Terminal in the editor.**
 
@@ -132,7 +132,7 @@ $ flutter packages get
 #### Step 5: Contribute
 Make relevant changes according to the issue that you were assigned on. Contribute in any way you feel like :)
 
-#### Step 6: Commiting and Pushing
+#### Step 6: Committing and Pushing
 Once you have modified an existing file or added a new file to the project, you can add it to your local repository, which we can do with the git add command.
 
 ```bash
@@ -181,8 +181,10 @@ You can find the Code of Conduct <a href="https://github.com/kritikaparmar-progr
 	</tr>
 </table>
 
-## Open Source Programs the project have been associated with
+## Open Source Programs the project has been associated with
 [![GSSOC](https://gssoc.girlscript.tech/images/favicon/favicon.png)](https://gssoc.girlscript.tech/)
 
 
-## Drop a ⭐ on the Github Repository if you like it.<br><br>
+## Drop an ⭐ on the Github Repository if you like it.<br><br>
+
+
