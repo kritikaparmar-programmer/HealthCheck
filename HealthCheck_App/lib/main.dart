@@ -1,10 +1,10 @@
-import 'package:HealthCheck_App/Screens/DiseaseDetection/parkinsonsdiseasese_detection.dart';
-import 'package:HealthCheck_App/Screens/category.dart';
-import 'package:HealthCheck_App/Screens/DiseaseSelection/disease_selection.dart';
+import 'Screens/DiseaseDetection/cancer_detection.dart';
+import 'Screens/category.dart';
+import 'Screens/DiseaseSelection/user_disease_selection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:HealthCheck_App/Screens/settings.dart';
-import 'package:HealthCheck_App/Screens/about.dart';
+import 'Screens/settings.dart';
+import 'Screens/about.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,6 +20,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/settings': (context) => Settings(),
         '/about': (context) => About(),
+        '/cancer': (context) => Cancer(),
+        '/userSelect': (context) => UserDiseaseSelect(),
       },
       title: 'Health Check',
       debugShowCheckedModeBanner: false,
