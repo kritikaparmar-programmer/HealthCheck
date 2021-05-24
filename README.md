@@ -44,7 +44,7 @@ This is a Machine Learning Web Application that can predict three diseases i.e. 
 
 To work on an open-source project, you will first need to make your copy of the repository. To do this, you should fork the repository and then clone it so that you have a local working copy.
 
-Get your own Fork/Copy of repository by clicking the `Fork` button in right upper corner.<br><br>
+Get your own Fork/Copy of repository by clicking the `Fork` button in the right upper corner.<br><br>
 
 #### Step 2: Clone the Forked Repository
 
