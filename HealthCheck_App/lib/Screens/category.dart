@@ -63,41 +63,17 @@ class _CategoryState extends State<Category> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+        Navigator.pushNamed(context, '/settings');
+      },
+      backgroundColor: Colors.yellow[900],
+      child: Icon(Icons.settings, size: 30.0,),
+      ),
       body: SafeArea(
         child: ListView(
           children: [
-            Padding(
-              padding: const EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
-              child: Row(
-                children: [
-                  // Container(
-                  //   decoration: BoxDecoration(
-                  //     shape: BoxShape.circle,
-                  //     color:Colors.yellow[900],
-                  //   ),
-                  //   child: IconButton(
-                  //     icon: Icon(Icons.lightbulb),
-                  //     iconSize: 30.0,
-                  //     onPressed: (){},
-                  //   ),
-                  // ),
-                  Spacer(),
-                   Container(
-                     decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color:Colors.yellow[900],
-                    ),
-                     child: IconButton(
-                       icon: Icon(Icons.settings),
-                       iconSize: 30.0,
-                       onPressed: (){
-                         Navigator.pushNamed(context,'/settings');
-                       },
-                     ),
-                   ),
-                ],
-              ),
-            ),
+            
             Padding(
                 padding:
                     const EdgeInsets.only(top: 20.0, left: 10.0, right: 10.0),
@@ -111,17 +87,18 @@ class _CategoryState extends State<Category> with TickerProviderStateMixin {
             SlideTransition(
               position: _offsetFloat1,
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/userSelect');
+                },
                 child: Padding(
                     padding: const EdgeInsets.only(
-                        top: 80.0, right: 10.0, left: 70.0, bottom: 20.0),
+                        top: 40.0, right: 10.0, left: 70.0, bottom: 20.0),
                     child: catrgorySection('assets/images/user.png')),
               ),
             ),
             SlideTransition(
               position: _offsetFloat2,
-              child: GestureDetector(
-                onTap: () {},
+              child: GestureDetector(                onTap: () {},
                 child: Padding(
                     padding: const EdgeInsets.only(
                         top: 20.0, right: 70.0, left: 10.0, bottom: 20.0),
