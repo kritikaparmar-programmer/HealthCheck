@@ -73,7 +73,9 @@ class _UserDiseaseSelectState extends State<UserDiseaseSelect> with TickerProvid
             SlideTransition(
               position: _offsetFloat1,
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/heart');
+                },
                 child: Padding(
                     padding: const EdgeInsets.only(
                         top: 80.0, right: 10.0, left: 70.0, bottom: 20.0),
@@ -96,7 +98,9 @@ class _UserDiseaseSelectState extends State<UserDiseaseSelect> with TickerProvid
               SlideTransition(
               position: _offsetFloat1,
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/diabetes');
+                },
                 child: Padding(
                     padding: const EdgeInsets.only(
                          top: 20.0, right: 10.0, left: 70.0, bottom: 20.0),
@@ -107,7 +111,9 @@ class _UserDiseaseSelectState extends State<UserDiseaseSelect> with TickerProvid
               SlideTransition(
               position: _offsetFloat2,
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/liver');
+                },
                 child: Padding(
                     padding: const EdgeInsets.only(
                         top: 20.0, right: 70.0, left: 10.0, bottom: 20.0),
@@ -118,7 +124,9 @@ class _UserDiseaseSelectState extends State<UserDiseaseSelect> with TickerProvid
               SlideTransition(
               position: _offsetFloat1,
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, '/stroke');
+                },
                 child: Padding(
                     padding: const EdgeInsets.only(
                         top: 20.0, right: 10.0, left: 70.0, bottom: 20.0),

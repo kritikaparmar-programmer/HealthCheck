@@ -5,6 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'Screens/settings.dart';
 import 'Screens/about.dart';
+import 'Screens/DiseaseDetection/diabetes_detection .dart';
+import 'Screens/DiseaseDetection/heart_disease_detection .dart';
+import 'Screens/DiseaseDetection/liver_disease_detection .dart';
+import 'Screens/DiseaseDetection/stroke_detection .dart';
 
 void main() {
   runApp(MyApp());
@@ -21,6 +25,10 @@ class MyApp extends StatelessWidget {
         '/settings': (context) => Settings(),
         '/about': (context) => About(),
         '/cancer': (context) => Cancer(),
+        '/diabetes': (context) => Diabetes(),
+        '/heart': (context) => HeartAttack(),
+        '/liver': (context) => Liver(),
+        '/stroke': (context) => Stroke(),
         '/userSelect': (context) => UserDiseaseSelect(),
       },
       title: 'Health Check',
