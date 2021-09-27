@@ -1,12 +1,13 @@
 {% extends "layout.html" %}
 {% block css %}
+
 .card
 {
-margin-bottom:20px;
-border-radius:10px;
-height:auto;
-max-height:56vh;
-overflow:hidden;
+  margin-bottom:20px;
+  border-radius:10px;
+  height:auto;
+  max-height:56vh;
+  overflow:hidden;
 }
 .card:hover {
 background-color:#87a4f6;
@@ -29,105 +30,95 @@ overflow:hidden;
 {% block body %}
 
 <div class="container-fluid px-0 py-0">
-  <img class="card-img-top" src="/static/bg_healthcheck.png" alt="">
+  <img class="card-img-top" name="light" src="/static/bg_healthcheck.png" alt="backgroud_image_light">
 </div>
 
 <br>
 
 <div class="container-fluid px-5 mb-3 pb-3">
-  <div class="row">
-
+  <div class="row" style="margin-top:15px">
     <div class="col-lg-3 col-md-4 col-sm-11">
       <div class="card">
-        <img class="card-img-top"
-          src="{{ url_for('static', filename='diabetes_image.jpg') }}" width="150"
-          height="200" alt="">
+        <img class="card-img-top" src="static/categories/diabetes_tieuduong.jpg" width="150" height="150" alt="">
         <div class="card-body">
-          <h4 class="card-title">Diabetes Prediction</h4>
+          <h4 class="card-title">Dự đoán tiểu đường</h4>
           <h6 class="card-text"></h6>
         </div>
         <div class="card-footer">
-          <a href="{{ url_for('diabetes') }}" class="btn btn-primary">Take Test!</a>
+          <a href="{{ url_for('diabetes') }}" class="btn btn-primary">Kiểm tra ngay !!!</a>
         </div>
       </div>
     </div>
 
     <div class="col-lg-3 col-md-4 col-sm-11">
       <div class="card">
-        <img class="card-img-top"
-          src="https://i1.wp.com/www.md2c.nl/wp-content/uploads/2016/06/predict-heart-disease.jpg?fit=480%2C360"
-          width="150" height="200" alt="">
+        <img class="card-img-top" src="static/categories/heartDisease_Tim.jpg" width="150" height="150" alt="">
         <div class="card-body">
-          <h4 class="card-title">Heart Disease Prediction</h4>
+          <h4 class="card-title">Dự đoán bệnh tim</h4>
           <h6 class="card-text"></h6>
         </div>
         <div class="card-footer">
-          <a href="{{ url_for('heart') }}" class="btn btn-primary">Take Test!</a>
+          <a href="{{ url_for('heart') }}" class="btn btn-primary">Kiểm tra ngay !!!</a>
         </div>
       </div>
     </div>
 
     <div class="col-lg-3 col-md-4 col-sm-11">
       <div class="card">
-        <img class="card-img-top" src="{{ url_for('static', filename='cancer_.png') }}" width="150" height="200" alt="">
+        <img class="card-img-top" src="static/categories/stroke_dotQuy.jpg" width="150" height="150" alt="">
         <div class="card-body">
-          <h4 class="card-title">Cancer Prediction</h4>
+          <h4 class="card-title">Dự đoán đột quỵ</h4>
           <h6 class="card-text"></h6>
         </div>
         <div class="card-footer">
-          <a href="{{ url_for('cancer') }}" class="btn btn-primary">Take Test!</a>
+          <a href="{{ url_for('stroke') }}" class="btn btn-primary">Kiểm tra ngay !!!</a>
         </div>
       </div>
     </div>
 
     <div class="col-lg-3 col-md-4 col-sm-11">
       <div class="card">
-        <img class="card-img-top" src="{{ url_for('static', filename='fetal_image.jpeg') }}" width="150" height="200"
+        <img class="card-img-top" src="static/categories/fetalHealth_thaiNhi.jpg"  width="150" height="150"
           alt="fetal image">
         <div class="card-body">
-          <h4 class="card-title">Fetal Health Prediction</h4>
+          <h4 class="card-title">Sức khoẻ thai nhi</h4>
           <h6 class="card-text"></h6>
         </div>
         <div class="card-footer">
-          <a href="/fetal_health" class="btn btn-primary">Take Test!</a>
+          <a href="/fetal_health" class="btn btn-primary">Kiểm tra ngay !!!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top:15px">
+    <div class="col-lg-3 col-md-4 col-sm-11">
+      <div class="card">
+        <img class="card-img-top" src="static/categories/breastCancer_nguc.jpg" width="150" height="150" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Ung thư ngực</h4>
+          <h6 class="card-text"></h6>
+        </div>
+        <div class="card-footer">
+          <a href="{{ url_for('cancer') }}" class="btn btn-primary">Kiểm tra ngay !!!</a>
         </div>
       </div>
     </div>
 
     <div class="col-lg-3 col-md-4 col-sm-11">
       <div class="card">
-        <img class="card-img-top" src="{{url_for('static',filename='stroke.png')}}" width="150" height="200" alt="">
+        <img class="card-img-top" src="static/categories/liver_gan.jpg" width="150" height="150" alt="">
         <div class="card-body">
-          <h4 class="card-title">Stroke Prediction</h4>
-          <h6 class="card-text"></h6>
-        </div>
-        <div class="card-footer">
-          <a href="{{ url_for('stroke') }}" class="btn btn-primary">Take Test!</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-3 col-md-4 col-sm-11">
-      <div class="card">
-        <img class="card-img-top" src="{{url_for('static',filename='liver.jpg')}}" width="150" height="200" alt="">
-        <div class="card-body">
-          <h4 class="card-title">Liver Disease Prediction</h4>
+          <h4 class="card-title">Dự đoán bệnh gan</h4>
           <h6 class="card-text"></h6>
         </div>
           <div class="card-footer">
-            <a href="{{ url_for('liver') }}" class="btn btn-primary">Take Test!</a>
+            <a href="{{ url_for('liver') }}" class="btn btn-primary">Kiểm tra ngay !!!</a>
           </div>
         </div>
       </div>
-      
-
-  </div>
-</div>
-
-<!-- /.row 
-
-    
-    <div class="col-md-4 mb-5">
+      </div>
+<!--       
+      <div class="col-md-4 mb-5">
         <div class="card h-100">
           <img class="card-img-top" src="{{ url_for('static', filename='malaria.jpg') }}" alt="">
           <div class="card-body">
@@ -137,7 +128,15 @@ overflow:hidden;
           <div class="card-footer">
             <a href="{{ url_for('malaria') }}" class="btn btn-primary">Take Test!</a>
           </div>
-        </div>
+        </div> -->
+
+  </div>
+</div>
+
+<!-- /.row 
+
+    
+
   </div>
   <!-- /.row
 
@@ -166,7 +165,7 @@ overflow:hidden;
           </div>
         </div>
       </div>
-    </div>-->
+    </div> -->
 
 
 {% endblock %}

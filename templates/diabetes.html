@@ -1,9 +1,26 @@
 {% extends "layout.html" %} {% block body %}
 <br />
 <div class="container">
-  <h1 class="text-center mb-2 pb-2"><u>Diabetes Prediction</u></h1>
+  <h1 class="text-center mb-2 pb-2">Dự đoán bệnh tiểu đường</h1>
+
+  <div class="row">
+
+  <div class="col-lg-6 col-md-6 col-sm-2">
+    <p style="margin-top:20px">
+      Tiểu đường (hay đái tháo đường) là thuật ngữ dùng để đề cập tới một nhóm bệnh gây ảnh hưởng đến cách cơ thể sử dụng lượng đường (glucose) trong máu.
+    <br>
+    Glucose rất quan trọng đối với sức khỏe vì đây là nguồn năng lượng cần thiết giúp cho các tế bào trong cơ thể hoạt động bình thường, đặc biệt là tế bào não.
+    <br>
+    Nguyên nhân gây bệnh rất đa dạng, tùy thuộc vào từng loại tiểu đường cụ thể. Tuy nhiên, dù mắc loại tiểu đường nào thì bệnh vẫn dẫn đến lượng đường trong máu cao, từ đó gây nên hàng loạt vấn đề sức khỏe nghiêm trọng.
+    </p>
+    <img src=".\static\img_cate\tieuduong.jpg" width="100%">
+    <p>Hãy cùng làm một bài test xem bạn có nguy cơ bị tiểu đường không nhé !</p>
+  
+  
+  </div>
 
   <!-- Text Area -->
+  <div class="col-lg-6 col-md-6 col-sm-10">
   <div class="container-castome mx-auto">
     <form action="{{ url_for('predict_diabetes') }}" method="POST">
         {% with messages = get_flashed_messages(with_categories=true) %}
@@ -18,82 +35,94 @@
             {% endif %}
           {% endwith %}
       <div class="form-group">
-        <label class="lb-lg">Number of Pregnancies</label>
+        <label class="lb-lg">Số lần mang thai (đái tháo đường thai kỳ)</label>
         <input
-          type="text"
+          type="number"
+          min="0"
+          max="20"
           class="form-control"
           name="pregnancies"
-          placeholder="Number of Pregnancies eg. 0"
+          placeholder="Số lần mang thai tối thiểu 0"
         />
       </div>
 
       <div class="form-group">
-        <label class="lb-lg">Glucose</label>
+        <label class="lb-lg">Chỉ số Glucose</label>
         <input
-          type="text"
+          type="number"
+          step="0.2"
+          min="0"
           class="form-control"
           name="glucose"
-          placeholder="Glucose (mg/dL) eg. 80"
+          placeholder="Glucose (mg/dL) tối thiểu 40mg/dL"
         />
       </div>
 
       <div class="form-group">
-        <label class="lb-lg">Blood Pressure</label>
+        <label class="lb-lg">Chỉ số huyết áp</label>
         <input
-          type="text"
+          type="number"
+          min="0"
           class="form-control"
           name="bloodpressure"
-          placeholder="Blood Pressure (mmHg) eg. 80"
+          placeholder="Chỉ số huyết áp (mmHg) tối thiểu 40mmHg"
         />
       </div>
 
       <div class="form-group">
-        <label class="lb-lg">Skin Thickness</label>
+        <label class="lb-lg">Độ dày của da</label>
         <input
-          type="text"
+          type="number"
+          min="0"
           class="form-control"
           name="skinthickness"
-          placeholder="Skin Thickness (mm) eg. 20"
+          placeholder="Độ dày của da (mm) tối thiểu 20mm"
         />
       </div>
 
       <div class="form-group">
-        <label class="lb-lg">Insulin Level</label>
+        <label class="lb-lg">Mức Insulin</label>
         <input
-          type="text"
+          type="number"
+          min="0"
           class="form-control"
           name="insulin"
-          placeholder="Insulin Level (IU/mL) eg. 80"
+          placeholder="Mức Insulin (IU/mL) tối thiểu 40IU/mL"
         />
       </div>
 
       <div class="form-group">
-        <label class="lb-lg">Body Mass Index</label>
+        <label class="lb-lg">Chỉ số BMI</label>
         <input
-          type="text"
+          type="number"
+          min="2.1"
+          step="0.1"
           class="form-control"
           name="bmi"
-          placeholder="Body Mass Index (kg/m²) eg. 23.1"
+          placeholder="Chỉ số BMI (kg/m²) tối thiểu 23.1kg/m²"
         />
       </div>
 
       <div class="form-group">
-        <label class="lb-lg">Diabetes Pedigree Function</label>
+        <label class="lb-lg">Chỉ số di truyền</label>
         <input
-          type="text"
+          type="number"
+          min="0.02"
+          step="0.01"
           class="form-control"
           name="dpf"
-          placeholder="Diabetes Pedigree Function eg. 0.52"
+          placeholder="Chỉ số di truyền tối thiểu 0.32"
         />
       </div>
 
       <div class="form-group">
-        <label class="lb-lg">Age</label>
+        <label class="lb-lg">Tuổi</label>
         <input
-          type="text"
+          type="number"
+          min="20"
           class="form-control"
           name="age"
-          placeholder="Age (years) eg. 34"
+          placeholder="Tối thiểu 20 tuổi"
         />
       </div>
 
@@ -102,5 +131,7 @@
       </div>
     </form>
   </div>
+  </div>
+</div>
 </div>
 {% endblock %}
