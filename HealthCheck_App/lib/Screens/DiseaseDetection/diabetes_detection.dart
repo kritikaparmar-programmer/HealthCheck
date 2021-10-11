@@ -2,12 +2,12 @@ import 'package:health_check_app/Resources/RoundedButton.dart';
 import 'package:health_check_app/Resources/TextformField.dart';
 import 'package:flutter/material.dart';
 
-class Cancer extends StatefulWidget {
+class Diabetes extends StatefulWidget {
   @override
-  _CancerState createState() => _CancerState();
+  _DiabetesState createState() => _DiabetesState();
 }
 
-class _CancerState extends State<Cancer> {
+class _DiabetesState extends State<Diabetes> {
   final _formKey = GlobalKey<FormState>();
 
   double radius_mean,
@@ -417,7 +417,6 @@ class _CancerState extends State<Cancer> {
                             }
                           },
                         ),
-                        
                         SizedBox(
                           height: 20,
                         ),
@@ -578,7 +577,6 @@ class _CancerState extends State<Cancer> {
                             }
                           },
                         ),
-                      
                         SizedBox(
                           height: 20,
                         ),
